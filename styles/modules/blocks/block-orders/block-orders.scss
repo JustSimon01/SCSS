@@ -1,0 +1,54 @@
+.block-orders{
+    background-color: $block-orders-bg-color;
+
+    &__layout{
+        display: grid;
+        margin: auto;
+        box-sizing: border-box;
+        max-width: 1440px;
+        padding: 50px;
+        justify-content: space-between;
+        grid-template-areas:
+        "title-theme ."
+        "title ."
+        "image subtitle"
+        "image button";
+    }
+    
+    &__title-theme{
+        text-transform: uppercase;
+        margin: 0 0 50px;
+        grid-area: title-theme;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__title{
+        margin: 0 0 106px;
+        grid-area: title;
+        font-family: 'Roboto-Light', sans-serif;
+        font-size: 64px;
+        line-height: 64px;
+        max-width: 624px;
+    }
+
+    &__subtitle{
+        margin: 20px 0 0;
+        grid-area: subtitle;
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 380px;
+    }
+
+    &__photo-s{
+        max-width: 648px;
+        grid-area: image;
+        
+    }
+
+    &__button{
+        grid-area: button;
+        align-self: flex-end;
+        
+    }
+}

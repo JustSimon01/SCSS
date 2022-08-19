@@ -1,0 +1,44 @@
+.block-course{
+    background-color: $block-orders-bg-color;
+
+    &__layout{
+        display: grid;
+        margin: auto;
+        box-sizing: border-box;
+        max-width: 1440px;
+        padding: 50px;
+        justify-content: space-between;
+        grid-template-areas:
+        "title image"
+        "subtitle image"
+        "button image";
+        grid-template-rows: minmax(0px, auto) minmax(0px, auto) 1fr;
+    }
+
+    &__title{
+        margin: 0 0 60px;
+        grid-area: title;
+        font-family: 'Roboto-Light', sans-serif;
+        font-size: 100px;
+        line-height: 110px;
+        max-width: 624px;
+    }
+
+    &__subtitle{
+        margin: 0;
+        grid-area: subtitle;
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 469px;
+    }
+
+    &__photo-m{
+        max-width: 642px;
+        grid-area: image;
+        
+    }
+
+    &__button{
+        align-self: flex-end;
+    }
+}

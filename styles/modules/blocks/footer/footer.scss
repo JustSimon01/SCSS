@@ -1,0 +1,95 @@
+.footer{
+    background-color: $footer-bg-color;
+
+
+    &__layout{
+        margin: auto;
+        box-sizing: border-box;
+        padding: 50px;
+        max-width: 1440px;
+        display: grid;
+        grid-template-areas:
+        "arrow title"
+        ". fieldset"
+        "signature signature";
+        grid-template-columns: max-content min-content;
+        gap: 0 50px;
+    }
+
+    .arrow{
+        grid-area: arrow;
+        margin-top: 10px;
+        width: 129px;
+        height: 95px;
+    }
+
+    &__title{
+        grid-area: title;
+        margin: 0 0 120px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        color: white;
+        font-size: 120px;
+        line-height: 120px;
+        max-width: 685px;
+    }
+
+    &__signature{
+        grid-area: signature;
+        margin: 86px 0 0;
+        color: white;
+        font-size: 15px;
+        line-height: 24px;
+    }
+}
+
+.form{
+    margin: 0;
+    padding: 0;
+    grid-area: fieldset;
+    max-width: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid #000;
+    display: grid;
+    grid-template-areas:
+    "email submit";
+    grid-template-columns: 348px 205px;
+    grid-template-rows: 50px;
+    overflow: hidden;
+
+    &__email{
+        grid-area: email;
+        border: none;
+        margin: 13px 20px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 24px;
+
+        &:focus {
+            outline: none;
+            border: none;
+        }
+        &::placeholder{
+            color: #000;
+        }
+    }
+
+    &__submit{
+        grid-area: submit;
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        border: none;
+        border-left: 2px solid #000;
+        font-size: 14px;
+        line-height: 24px;
+        cursor: pointer;
+        transition: linear 0.2s;
+
+        &:hover{
+            font-weight: 700;
+        }
+    }
+
+}

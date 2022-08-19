@@ -1,0 +1,22 @@
+.text{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+    &-bold{
+        font-weight: 700;
+    }
+}
+
+
+//цвета
+$header-bg-color: #DF2626;
+$block-camera-bg-color:#000;
+$block-composition-bg-color:#FFCE00;
+$block-course-bg-color:#FFF;
+$block-orders-bg-color:#FFF;
+$footer-bg-color:#DF2626;
+
+$header-menu-text-color:#FBFBFB;

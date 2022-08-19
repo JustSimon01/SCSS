@@ -1,0 +1,71 @@
+.block-composition{
+    background-color: $block-composition-bg-color;
+
+    &__layout{
+        display: grid;
+        margin: auto;
+        box-sizing: border-box;
+        max-width: 1440px;
+        padding: 50px 50px 100px;
+        justify-content: space-between;
+        grid-template-areas:
+        "title-theme image"
+        "title image"
+        "subtitle image"
+        "button image";
+        grid-template-rows: minmax(0px, auto) minmax(0px, auto) minmax(0px, auto) 1fr;
+    }
+
+    &__title-theme{
+        text-transform: uppercase;
+        margin: 0 0 50px;
+        grid-area: title-theme;
+        max-width: 400px;
+    }
+
+    &__title{
+        margin: 0 0 100px;
+        grid-area: title;
+        font-family: 'Roboto-Light', sans-serif;
+        font-size: 64px;
+        line-height: 64px;
+        max-width: 400px;
+    }
+
+    &__subtitle{
+        margin: 0 0 20px;
+        grid-area: subtitle;
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 400px;
+    }
+
+    &__photo-l{
+        grid-area: image;
+        max-width: 642px;
+        justify-self: flex-end;
+    }
+    &__button{
+        align-self: flex-end;
+    }
+
+    &__course-subjects{
+        margin: auto;
+        box-sizing: border-box;
+        max-width: 1440px;
+        padding: 0 54px 50px;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    p {
+        margin: 0 0 20px;
+    }
+
+    li{
+        max-width: 291px;
+    }
+}
